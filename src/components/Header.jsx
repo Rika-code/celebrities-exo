@@ -44,6 +44,9 @@ function Header ({ currentPage }) {
             }
     
             </li>
+            <li>
+                <Link to ="/copyright">Copyright</Link>
+            </li>
         </ul>
         </>
     )
