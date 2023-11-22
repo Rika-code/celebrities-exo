@@ -7,6 +7,7 @@ import CelebritiesRandom from './page/CelebritiesRandom';
 import OneCelebrity from './page/OneCelebrity';
 import TvSpeakersPage from './page/TVSpeakersPage';
 import CopyrightPage from './page/CopyrightPage';
+import FormMessagePage from './page/FormMessagePage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
   <Route path = "/random" element = {<CelebritiesRandom/>}/>
   <Route path ="/speakers" element = {<TvSpeakersPage/>}/>
   <Route path ="/copyright" element ={<CopyrightPage/>}/>
+  <Route path ="/message" element ={<FormMessagePage/>}/>
 </Routes>
 </BrowserRouter>
   );

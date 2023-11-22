@@ -47,6 +47,9 @@ function Header ({ currentPage }) {
             <li>
                 <Link to ="/copyright">Copyright</Link>
             </li>
+            <li>
+                <Link to ="/message">Message</Link>
+            </li>
         </ul>
         </>
     )
