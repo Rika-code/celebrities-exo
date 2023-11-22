@@ -1,0 +1,24 @@
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Home from "./page/Home"
+import Celebrities from './page/Celebrities';
+import CelebritiesRandom from './page/CelebritiesRandom';
+import OneCelebrity from './page/OneCelebrity';
+import TvSpeakersPage from './page/TVSpeakersPage';
+
+function App() {
+  return (
+<BrowserRouter>
+<Routes>
+  <Route path = "/" element = {<Home/>}/>
+  <Route path = "/stars" element ={<Celebrities/>}/>
+  <Route path = "/celebrities/:celebrityId" element={<OneCelebrity/>}/>
+  <Route path = "/random" element = {<CelebritiesRandom/>}/>
+  <Route path ="/speakers" element = {<TvSpeakersPage/>}/>
+</Routes>
+</BrowserRouter>
+  );
+}
+
+export default App;
