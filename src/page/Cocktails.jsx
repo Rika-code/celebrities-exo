@@ -23,9 +23,12 @@ function Cocktails () {
     <>
     {cocktails.map((cocktail) => { 
       return (
-        <article>
-            <h2>{cocktail.strDrink}</h2>   
-        </article>
+        <div>
+            <h2>{cocktail.strDrink}</h2>  
+             <img src={cocktail.strDrinkThumb}/>
+        </div>
+        
+         
       );
     })}
     </>
