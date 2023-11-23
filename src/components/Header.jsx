@@ -50,6 +50,9 @@ function Header ({ currentPage }) {
             <li>
                 <Link to ="/message">Message</Link>
             </li>
+            <li>
+                <Link to = "/like">Like</Link>
+            </li>
         </ul>
         </>
     )
