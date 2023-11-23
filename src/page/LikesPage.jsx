@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function LikesPage () {
-    const [Likescount, setLikescount] = useState(0);
+    const [likescount, setLikescount] = useState(0);
 
     const clickHandle = () => {
         return setLikescount(Likescount + 1);
@@ -10,7 +10,7 @@ function LikesPage () {
     return (
         <main>
             <button onClick={clickHandle}>Like</button>
-            <p> Vous avez liké {Likescount} fois</p>
+            <p> Vous avez liké {likescount} fois</p>
         </main>
     )
 }
