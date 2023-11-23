@@ -11,14 +11,29 @@ function Cocktails () {
 
     .then((cocktailsInJs) => {  
         console.log(cocktailsInJs); // J'affiche la conversion de mes données en Json a l'aide de mon console.log
-        setCocktails(cocktailsInJs) 
+        setCocktails(cocktailsInJs.drinks) 
     })}
 // Dans mon return ci-dessous, je vais vérifier si mes données sont chargées en les affichants.
+// {cocktails.map((cocktail) => { : Je viens récuperer la liste de mes boissons.
+// mon h2 affiche le str Drink
+// si les données ne se sont pas encore chargées ou ne se chargent pas, "Cocktails en cours de chargement..." s'affichera.
     return (
-   <main> 
-    {cocktails ? <article> cocktails prêts avec la paille</article> : 
-    <p>chargement des cocktails...</p>}
-   </main>
-    ) 
+        <main>
+   {cocktails ? (
+    <>
+    {cocktails.map((cocktail) => { 
+      return (
+        <article>
+            <h2>{cocktail.strDrink}</h2>   
+        </article>
+      );
+    })}
+    </>
+
+   ) : (
+    <p> Cocktails en cours de chargement...</p>
+   )}
+</main>
+)
 }
 export default Cocktails
