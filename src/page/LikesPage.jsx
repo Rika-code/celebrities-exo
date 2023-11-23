@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function LikesPage () {
-    const [likescount, setLikescount] = useState(0);
+    const [likescount, setLikescount] = useState(0)
     const [messageDisplay, setMessageDisplay] = useState(true)
 
     const clickHandle = () => {
